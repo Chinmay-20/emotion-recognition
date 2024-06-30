@@ -46,11 +46,11 @@ python train_recognizer.py --checkpoints path/to/checkpoints --model path/to/mod
 
 The output will display the webcam feed with a bounding box around detected faces and the predicted emotion. A separate window will show the probabilities for each emotion.
 
-![Alt text](op1.png)
+![Alt text](op3.png)
 
 ![Alt text](op2.png)
 
-![Alt text](op3.png)
+![Alt text](op1.png)
 
 
    
