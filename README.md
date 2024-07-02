@@ -1,3 +1,48 @@
+# Emotion Recognition Portal
+
+This web application allows users to perform emotion recognition through live streaming or video uploads.
+
+## Features
+
+- Live emotion recognition through a webcam.
+- Upload and process videos for emotion recognition.
+
+## Prerequisites
+
+- Python 3.x
+- Flask
+- Additional dependencies listed in `requirements.txt`.
+
+## Installation
+
+Clone the repository to your local machine:
+
+```bash
+git clone https://github.com/your-username/repository-name.git
+cd repository-name
+```
+
+## Usage
+python app.py
+
+This will start the Flask server, and the application will be accessible from http://localhost:5000 in your web browser.
+
+## Endpoints
+
+/ - The home page that links to all features.
+/live_stream - Live camera feed for real-time emotion recognition.
+/upload_video - Upload and process videos for emotion recognition.
+Contributing
+
+## Contributions 
+
+Are welcome! For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+
+
+
 # Emotion Detection with CNN
 
 This repository contains a project for detecting emotions from facial expressions using a Convolutional Neural Network (CNN) implemented with Keras and OpenCV.
