@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Video for Emotion Recognition</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
+        }
+        h1 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input[type="file"] {
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #800080;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #6a006a;
+        }
+        a {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Upload a Video for Emotion Recognition</h1>
+    <form action="{{ url_for('upload_video') }}" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept="video/*">
+        <button type="submit">Upload</button>
+    </form>
+    <a href="/"><button>Return to Home</button></a>
+</body>
+</html>
